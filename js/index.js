@@ -54,12 +54,12 @@ let heroButton = document.querySelector("button");
 heroButton.textContent = siteContent["cta"]["button"];
 
 let navBar = document.getElementsByTagName("a");
-navBar[0].textContent = "Services";
-navBar[1].textContent = "Product";
-navBar[2].textContent = "Features";
-navBar[3].textContent = "About";
-navBar[4].textContent = "Vision";
-navBar[5].textContent = "Contact";
+navBar[0].textContent = siteContent["nav"]["nav-item-1"];
+navBar[1].textContent = siteContent["nav"]["nav-item-2"];
+navBar[2].textContent = siteContent["nav"]["nav-item-3"];
+navBar[3].textContent = siteContent["nav"]["nav-item-4"];
+navBar[4].textContent = siteContent["nav"]["nav-item-5"];
+navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 
 // navBar[0].style.color = "green";
 // navBar[1].style.color = "green";
