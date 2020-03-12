@@ -39,4 +39,44 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+
+let hero = document.getElementById("cta-img");
+hero.setAttribute('src', siteContent["cta"]["img-src"])
+
+let midPage = document.getElementById("middle-img");
+midPage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let heroBanner = document.querySelector("h1");
+heroBanner.textContent = siteContent["cta"]["h1"];
+
+let heroButton = document.querySelector("button");
+heroButton.textContent = siteContent["cta"]["button"];
+
+let navBar = document.getElementsByTagName("a");
+navBar[0].textContent = "Services";
+navBar[1].textContent = "Product";
+navBar[2].textContent = "Features";
+navBar[3].textContent = "About";
+navBar[4].textContent = "Vision";
+navBar[5].textContent = "Contact";
+
+let h4Content = document.getElementsByTagName("h4");
+h4Content[0].textContent = "Features"
+h4Content[1].textContent = "About"
+h4Content[2].textContent = "Services"
+h4Content[3].textContent = "Product"
+h4Content[4].textContent = "Vision"
+h4Content[5].textContent = "Contact"
+
+let ContentPara = document.getElementsByTagName("p");
+ContentPara[0].textContent = siteContent["main-content"]["features-content"];
+ContentPara[1].textContent = siteContent["main-content"]["about-content"];
+ContentPara[2].textContent = siteContent["main-content"]["services-content"];
+ContentPara[3].textContent = siteContent["main-content"]["product-content"];
+ContentPara[4].textContent = siteContent["main-content"]["vision-content"];
+ContentPara[5].textContent = siteContent["contact"]["address"];
+ContentPara[6].textContent = siteContent["contact"]["phone"];
+ContentPara[7].textContent = siteContent["contact"]["email"];
+ContentPara[8].textContent = siteContent["footer"]["copyright"]
