@@ -41,7 +41,6 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-
 let hero = document.getElementById("cta-img");
 hero.setAttribute('src', siteContent["cta"]["img-src"])
 
@@ -61,6 +60,18 @@ navBar[2].textContent = "Features";
 navBar[3].textContent = "About";
 navBar[4].textContent = "Vision";
 navBar[5].textContent = "Contact";
+
+// navBar[0].style.color = "green";
+// navBar[1].style.color = "green";
+// navBar[2].style.color = "green";
+// navBar[3].style.color = "green";
+// navBar[4].style.color = "green";
+// navBar[5].style.color = "green";
+const navStyle = document.querySelectorAll("header nav a")
+navStyle.forEach(navBar => {
+    navBar.style.color = 'green';
+});
+
 
 let h4Content = document.getElementsByTagName("h4");
 h4Content[0].textContent = "Features"
