@@ -67,10 +67,7 @@ navBar[5].textContent = "Contact";
 // navBar[3].style.color = "green";
 // navBar[4].style.color = "green";
 // navBar[5].style.color = "green";
-const navStyle = document.querySelectorAll("header nav a")
-navStyle.forEach(navBar => {
-    navBar.style.color = 'green';
-});
+
 
 
 let h4Content = document.getElementsByTagName("h4");
@@ -91,3 +88,16 @@ ContentPara[5].textContent = siteContent["contact"]["address"];
 ContentPara[6].textContent = siteContent["contact"]["phone"];
 ContentPara[7].textContent = siteContent["contact"]["email"];
 ContentPara[8].textContent = siteContent["footer"]["copyright"]
+
+const newNavItem = document.querySelector("header nav");
+let newItem = document.createElement("a");
+newItem.textContent = "World";
+newNavItem.appendChild(newItem);
+let firstItem = document.createElement("a");
+firstItem.textContent = "Hello"
+newNavItem.prepend(firstItem);
+
+const navStyle = document.querySelectorAll("header nav a")
+navStyle.forEach(navBar => {
+    navBar.style.color = 'green';
+});
